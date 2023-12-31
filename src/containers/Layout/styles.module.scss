@@ -1,0 +1,13 @@
+@import "../../scss/base";
+
+.layoutBody {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+
+  .contentLayout {
+    padding-inline: 2.4rem;
+  }
+}

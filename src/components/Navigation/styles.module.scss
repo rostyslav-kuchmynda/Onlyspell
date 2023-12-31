@@ -1,0 +1,31 @@
+@import "../../scss/base";
+
+.navigationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+
+  background-color: $brandBackgroundColor;
+  padding: 1.6rem 4rem;
+}
+
+.navigationContainerMenu {
+  display: flex;
+  align-items: center;
+}
+
+.navigationMenuItems {
+  display: flex;
+  font-family: Montserrat;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  gap: 6rem;
+}
+
+.navMenuIcon {
+  cursor: pointer;
+  margin-left: 4.5rem;
+}
