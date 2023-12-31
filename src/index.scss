@@ -1,15 +1,15 @@
 @import "scss/base";
 
 @font-face {
-  font-family: 'Proximanova';
-  src: url('fonts/Fira_Sans/FiraSans-SemiBold.ttf') format('ttf');
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat/static/Montserrat-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: '';
-  src: url('fonts/Fira_Sans//FiraSans-Regular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Laviossa';
+  src: url("./fonts/Laviossa-Medium.otf") format("opentype");
 }
 
 :root {
