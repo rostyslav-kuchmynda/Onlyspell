@@ -1,0 +1,24 @@
+@import "../../scss/base";
+
+.dropDownButtonContainer {
+  display: flex;
+  align-items: center;
+  width: 22rem;
+  height: 5.1rem;
+  text-align: left;
+  background-color: inherit;
+  color: $white;
+  gap: 1.6rem;
+  border: none;
+  cursor: pointer;
+
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+
+  background-image: url("../../assets/DropDownButton/button_circle.svg");
+  background-repeat: no-repeat;
+  background-position: right 1.8rem top;
+}

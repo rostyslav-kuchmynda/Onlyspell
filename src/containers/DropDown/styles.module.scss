@@ -1,0 +1,52 @@
+@import "../../scss/base";
+
+.dropDownContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 72rem;
+  background-color: $brandBackgroundColor;
+  background-image: url('../../assets/DropDown/bg_image.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2.7rem 4rem 4rem 4rem;
+}
+
+.dropDownHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+
+.dropDownNavigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 51rem;
+  gap: 1.2rem;
+  font-family: Laviossa;
+}
+
+.dropDownFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigationItem {
+  cursor: pointer;
+  color: $white;
+  font-size: 3.2rem;
+  font-weight: 100;
+  line-height: 4.8rem;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $navigationHover;
+  }
+}
+
+.navCloseIcon {
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3.5rem;
+}

@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import { Navigation } from '../../components/Navigation';
+// import { Navigation } from '../../components/Navigation';
+import { DropDown } from '../../containers/DropDown';
 
 import { useTypedDispatch } from '../../hooks/storeHooks';
 import { uiGetTemplates } from '../../store';
@@ -17,7 +18,7 @@ export const Layout: React.FC = () => {
 
   return (
     <div className={classes.layoutBody}>
-      <Navigation />
+      <DropDown />
       <main className={classes.contentLayout}>
         <Routes>
           <Route path="/" element={<div>Home Page</div>}></Route>
