@@ -1,6 +1,6 @@
 import classes from './styles.module.scss';
 
-import ArrowRightIcon from '../../assets/DropDownButton/arrow_right.svg';
+import ArrowRightIcon from '../../../assets/DropDownButton/arrow_right.svg';
 
 const BUTTON_TEXT = 'Let’s start the magic in your business';
 

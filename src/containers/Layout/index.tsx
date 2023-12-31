@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 // import { Navigation } from '../../components/Navigation';
-import { DropDown } from '../../containers/DropDown';
+import { DropDown } from '../../components/DropDown';
 
 import { useTypedDispatch } from '../../hooks/storeHooks';
 import { uiGetTemplates } from '../../store';

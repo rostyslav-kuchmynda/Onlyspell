@@ -1,12 +1,12 @@
 import classes from './styles.module.scss';
 
-import Behance from '../../assets/behance.svg';
-import Facebook from '../../assets/facebook.svg';
-import Instagram from '../../assets/instagram.svg';
-import Linkedin from '../../assets/linkedin.svg';
-import Pinterest from '../../assets/pinterest.svg';
-import Twitter from '../../assets/twitter.svg';
-import Youtube from '../../assets/youtube.svg';
+import Behance from '../../../assets/behance.svg';
+import Facebook from '../../../assets/facebook.svg';
+import Instagram from '../../../assets/instagram.svg';
+import Linkedin from '../../../assets/linkedin.svg';
+import Pinterest from '../../../assets/pinterest.svg';
+import Twitter from '../../../assets/twitter.svg';
+import Youtube from '../../../assets/youtube.svg';
 
 const SOCIAL_MEDIAS = {
   instagram: Instagram,

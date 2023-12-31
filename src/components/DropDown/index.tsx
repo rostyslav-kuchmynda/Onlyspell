@@ -1,5 +1,5 @@
-import { DropDownSocialMedia } from '../../components/DropDownSocialMedia';
-import { DropDownButton } from '../../components/DropDownButton';
+import { DropDownSocialMedia } from './DropDownSocialMedia';
+import { DropDownButton } from './DropDownButton';
 
 import classes from './styles.module.scss';
 
