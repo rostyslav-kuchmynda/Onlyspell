@@ -16,7 +16,9 @@ export const Navigation = () => (
     <div className={classes.navigationContainerMenu}>
       <div className={classes.navigationMenuItems}>
         {Object.entries(NAVIGATION_MENU).map(([key, value]) => (
-          <p key={key}>{value}</p>
+          <button className={classes.navigationMenuItem} key={key}>
+            {value}
+          </button>
         ))}
       </div>
       <img

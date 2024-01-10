@@ -12,11 +12,10 @@
   line-height: 1.6rem;
   letter-spacing: 0.07rem;
   text-transform: uppercase;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+  @include commonTransitionDelay;
   border: 0;
   cursor: pointer;
-  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.30);
+  box-shadow: 0 0 2rem 0 #0000004d;
 
   &::after {
     content: '';
@@ -31,8 +30,7 @@
     top: 0;
     right: -3.45rem;
     border-style: solid;
-    -webkit-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out;
+    @include commonTransitionDelay;
   }
 
   &:hover {

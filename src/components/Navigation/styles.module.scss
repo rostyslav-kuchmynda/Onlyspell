@@ -17,12 +17,24 @@
 
 .navigationMenuItems {
   display: flex;
+  gap: 6rem;
+}
+
+.navigationMenuItem {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
   font-family: Montserrat;
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 24px;
-  text-transform: uppercase;
-  gap: 6rem;
+  color: $textColor;
+  cursor: pointer;
+  @include commonTransitionDelay;
+
+  &:hover {
+    color: $headerHoverPurple;
+  }
 }
 
 .navMenuIcon {

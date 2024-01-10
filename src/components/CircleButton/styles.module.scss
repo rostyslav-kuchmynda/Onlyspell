@@ -28,9 +28,8 @@
     width: 5.1rem;
     border: 0.1rem solid $circleColor;
     border-width: 0.1rem;
-    -webkit-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out;
     border-radius: 50%;
+    @include commonTransitionDelay;
   }
 
   &:hover {

@@ -1,0 +1,188 @@
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin fontSmoothness() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin noUserSelect() {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  transition: $value;
+}
+
+@mixin transform($value) {
+  -webkit-transform: $value;
+  transform: $value;
+}
+
+@mixin transformOrigin($value) {
+  -webkit-transform-origin: $value;
+  transform-origin: $value;
+}
+
+@mixin inlineBlockTop() {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@mixin inlineBlockMid() {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@mixin inlineBlockBottom() {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+@mixin flex($value) {
+  -webkit-flex: $value;
+  flex: $value;
+}
+
+@mixin displayFlex() {
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin displayInlineFlex() {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+
+@mixin alignSelf($value) {
+  -webkit-align-self: $value;
+  align-self: $value;
+}
+
+@mixin flexFlow($value) {
+  -webkit-flex-flow: $value;
+  flex-flow: $value;
+}
+
+@mixin justifyContent($value) {
+  -webkit-justify-content: $value;
+  justify-content: $value;
+}
+
+@mixin flexDirection($value) {
+  -webkit-flex-direction: $value;
+  flex-direction: $value;
+}
+
+@mixin flexWrap() {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+
+@mixin flexNoWrap() {
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+}
+
+@mixin alignItems($value) {
+  -webkit-align-items: $value;
+  align-items: $value;
+}
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  transition: $value;
+}
+
+@mixin transitionDelay($value) {
+  -webkit-transition-delay: $value;
+  transition-delay: $value;
+}
+
+@mixin listTransitionDelay($value, $count) {
+  @for $i from 1 through $count {
+    &:nth-of-type(#{$i}) {
+      @include transitionDelay(#{$value * $i}ms);
+    }
+  }
+}
+
+@mixin listAnimationDelay($value, $count) {
+  @for $i from 1 through $count {
+    &:nth-of-type(#{$i}) {
+      @include animationDelay(#{$value * $i}ms);
+    }
+  }
+}
+
+@mixin animationDelay($value) {
+  -webkit-animation-delay: $value;
+  animation-delay: $value;
+}
+
+@mixin filter($value) {
+  -webkit-filter: $value;
+  filter: $value;
+}
+
+@mixin fullAbsBg() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin animation($value) {
+  -webkit-animation: $value;
+  animation: $value;
+}
+
+@mixin smoothScroll() {
+  -webkit-overflow-scrolling: touch;
+}
+
+@mixin horizontalGradient($fromColor, $toColor) {
+  background-image: -webkit-gradient(linear, left top, right top, from($fromColor), to($toColor));
+  background-image: -webkit-linear-gradient(to right, $fromColor, $toColor);
+  background-image: linear-gradient(to right, $fromColor, $toColor);
+}
+
+@mixin lineClamp($numOfLines: 2) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: $numOfLines;
+  -webkit-box-orient: vertical;
+}
+
+@mixin commonTransitionDelay() {
+  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+}
+
+@function withFontScale($unit) {
+  @return calc(var(--fontSizeRatio) * $unit);
+}
+
+@function strip-unit($number) {
+  @if type-of($number)=='number' and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function lineHeightCalc($lineHeight, $fontSize) {
+  @return math.div(strip-unit($lineHeight), strip-unit($fontSize));
+}

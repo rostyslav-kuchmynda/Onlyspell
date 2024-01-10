@@ -34,9 +34,9 @@ export const DropDown = () => (
       </div>
       <nav className={classes.dropDownNavigation}>
         {Object.entries(DROPDOWN_NAVIGATION_MENU).map(([key, value]) => (
-          <p className={classes.navigationItem} key={key}>
+          <button className={classes.navigationItem} key={key}>
             {value}
-          </p>
+          </button>
         ))}
       </nav>
     </div>
