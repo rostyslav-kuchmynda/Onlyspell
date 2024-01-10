@@ -8,6 +8,11 @@
 
 
   .contentLayout {
-    padding-inline: 2.4rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    padding-inline: 4rem;
   }
 }
