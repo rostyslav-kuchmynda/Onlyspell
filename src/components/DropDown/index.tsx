@@ -1,5 +1,5 @@
-import { DropDownSocialMedia } from './DropDownSocialMedia';
-import { DropDownButton } from './DropDownButton';
+import { DropDownSocialMedia } from '../DropDownSocialMedia';
+import { CircleButton } from '../CircleButton';
 
 import classes from './styles.module.scss';
 
@@ -16,6 +16,8 @@ const DROPDOWN_NAVIGATION_MENU = {
   ourProducts: 'Our products',
   contactUs: 'Contact Us',
 };
+
+const BUTTON_TEXT = 'Let’s start the magic in your business';
 
 export const DropDown = () => (
   <div className={classes.dropDownContainer}>
@@ -40,7 +42,7 @@ export const DropDown = () => (
     </div>
     <div className={classes.dropDownFooter}>
       <DropDownSocialMedia />
-      <DropDownButton />
+      <CircleButton text={BUTTON_TEXT} />
     </div>
   </div>
 );
