@@ -17,7 +17,7 @@
 
 .footerTopSectionText {
   color: $textColor;
-  font-family: $secondary-font;
+  font-family: $secondary;
   font-size: 2rem;
   font-weight: 400;
   line-height: 3rem;
@@ -26,7 +26,7 @@
 
 .footerTopSectionTitle {
   color: $brandGreen;
-  font-family: $primary-font;
+  font-family: $primary;
   font-size: 9rem;
   font-weight: 100;
   line-height: 9rem;
@@ -54,7 +54,7 @@
   margin-right: 11.5rem;
   max-width: 31.1rem;
   color: $textColor;
-  font-family: $secondary-font;
+  font-family: $secondary;
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 2.4rem;

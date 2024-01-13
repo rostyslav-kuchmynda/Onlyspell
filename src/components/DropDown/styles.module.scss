@@ -42,12 +42,12 @@
   transition: color 0.2s;
   background-color: transparent;
   border: none;
-  font-family: $primary-font;
+  font-family: $primary;
   padding: 0;
 
 
   &:hover {
-    color: $navigationHover;
+    color: $brandBrickRed;
   }
 }
 
