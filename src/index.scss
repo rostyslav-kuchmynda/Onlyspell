@@ -27,7 +27,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   color: $textColor;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: $primary;
   height: 100%;
 
