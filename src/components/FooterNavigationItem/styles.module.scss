@@ -1,0 +1,19 @@
+@import "../../scss/base";
+
+.footerBottomSectionNavigationItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  width: max-content;
+}
+
+.footerBottomSectionNavigationText {
+  color: $white;
+  font-family: $secondary-font;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+}
